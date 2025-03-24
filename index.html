@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Música</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./reponsive.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div id="icono"><img src="./imagenes/logospotify.png" alt="" /></div>
+      <div id="inicio"><img src="./imagenes/inicio.png" alt="" /></div>
+      <div class="input-buscador">
+        <input
+          id="buscador-nav"
+          type="text"
+          placeholder="¿Qué quieres reproducir?"
+        />
+        <img src="./imagenes/lupa.png" alt="Buscar" class="icono-lupa" />
+      </div>
+
+      <div id="texto-nav">
+        <p>Premium</p>
+        <p>Asistencia</p>
+        <p>Descargar</p>
+        <p>|</p>
+        <p>⬇️ Instalar App</p>
+        <p>Registrarte</p>
+        <button id="iniciar-sesion">Iniciar Sesión</button>
+      </div>
+    </div>
+
+    <div class="nav-movil">
+      <div id="logo-movil"><img src="./imagenes/logo-movil.png" alt="" /></div>
+      <button id="iniciar-sesion">Abrir aplicación</button>
+      <img id="lupa-movil" src="./imagenes/lupa.png" alt="Buscar" />
+      <div id="menu"><img src="./imagenes/menu.png" alt="" /></div>
+    </div>
+    <div class="artistaspopulares"><h1>Artistas Populares</h1></div>
+
+    <div id="artistas-lista"></div>
+
+    <div class="artistaspopulares"><h1>Albumes y sencillos populares</h1></div>
+
+    <ul id="listaReproduccion"></ul>
+
+    <div class="controles">
+      <button id="prev">⏮</button>
+      <button id="play">▶️</button>
+      <button id="pause">⏸</button>
+      <button id="next">⏭</button>
+      <button id="mute">🔇</button>
+    </div>
+
+    <div id="menu-izquierdo">
+      <div id="Biblioteca">
+        <h2>Tu Biblioteca</h2>
+      </div>
+      <div id="crearlista">
+        <p>Crea tu primera lista de favoritos</p>
+        <p>Es muy fácil, y te echaremos una mano.</p>
+        <input type="text" id="nombreCancion" placeholder="Nombre de la canción">
+        <button id="favoritos">Agregar a Favoritos</button>
+    </div>
+    
+    <ul id="listaFavoritos"></ul>
+    
+    <ul id="listaFavoritos"></ul>
+    </div>
+    <audio id="reproducirAudio" controls></audio>
+    <script defer src="script.js"></script>
+  </body>
+</html>
