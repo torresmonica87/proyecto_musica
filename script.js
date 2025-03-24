@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "3:45",
       "Reguetón",
       "./imagenes/pose.jpg",
-      ".canciones/daddyyankee-pose.mp3"
+      "./canciones/daddyyankee-pose.mp3"
     ),
     new Cancion(
       "DALE DON DALE",
